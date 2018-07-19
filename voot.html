@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 20;
+}
+
+/* Style the header */
+.header {
+    background-color: purple;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: grey;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color:dark blue;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: bold;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: green;
+    color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+.column1 {
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:500px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>VOOT</h1>
+  <p>voot TV shows ,movies ,cartoons.</p>
+</div>
+
+<div class="topnav">
+  <a href="serial.html">serials</a>
+  <a href="reality.html">reality shows</a>
+  <a href="kids.html">kids</a>
+  <a href="login.html">login</a>
+<a href="signup.html">signup</a>
+
+
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Serial</h2>
+    <p>Bepannaah spoiler alert: It’s a new beginning for Zoya and Aditya</p>
+  </div>
+  <div class="column">
+    <h2>Roadies Xtreme</h2>
+    <p>  Ready or not here comes the deadliest season of MTV Roadies! The battleground is ready, the daggers are drawn and the gang leaders are on a hunt for their warriors. Join Rannvijay Singha, Nikhil Chinapa, Neha Dhupia, Prince Narula and Harbhajan Singh as they put together the ultimate gangs for the battle of the century. Watch MTV Roadies Rising anytime on Voot.
+</p>
+  </div>
+  <div class="column">
+    <h2>comedy</h2>
+    <p>Comedian and host Kapil Sharma interacts with celebrity guests who make an appearance on the show to promote their latest films while keeping the audience in peals of laughter with his wit and humour.
+</p>
+</div>
+<div class="column">
+    <h2>cartoon</h2>
+    <p> Tom, a house cat, continues to pursue his never-ending quest of nabbing down the notorious mouse, Jerry.</p>
+  </div>
+</div>
+<div class="row1">
+  <div class="column1">
+    <h2>Serial</h2>
+    <p>Bepannaah spoiler alert: It’s a new beginning for Zoya and Aditya</p>
+  </div>
+  <div class="column1">
+    <h2>Roadies Xtreme</h2>
+    <p>  Ready or not here comes the deadliest season of MTV Roadies! The battleground is ready, the daggers are drawn and the gang leaders are on a hunt for their warriors. Join Rannvijay Singha, Nikhil Chinapa, Neha Dhupia, Prince Narula and Harbhajan Singh as they put together the ultimate gangs for the battle of the century. Watch MTV Roadies Rising anytime on Voot.
+</p>
+  </div>
+
+</div>
+</body>
+</html>
